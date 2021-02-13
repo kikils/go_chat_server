@@ -1,0 +1,9 @@
+version: "3"
+services:
+  app:
+    build: ./app
+    tty: true
+    ports:
+      - 8080:8080
+    volumes:
+      - ./app:/go/src/github.com/kikils/go_chat_server
